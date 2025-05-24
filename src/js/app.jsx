@@ -6,7 +6,7 @@ import PredictionHistory from './Components/PredictionHistory'
 import CountdownPage from './Components/CountdownPage'
 import { Helmet } from 'react-helmet'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../src/css/app.scss';
+import '../css/app.scss';
 
 
 ReactDOM.createRoot(document.getElementById('app')).render(
