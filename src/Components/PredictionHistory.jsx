@@ -7,7 +7,7 @@ const PredictionHistory = () => {
 
   useEffect(() => {
     const fetchHistory = () => {
-      axios.get('https://backend.chinchincasinoapp.com/api/prediction-history')
+      axios.get(`https://backend.chinchincasinoapp.com/api/prediction-history`)
         .then(res => {
           if (res.data && typeof res.data === 'object') {
             const grouped = Object.entries(res.data)

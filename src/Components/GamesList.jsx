@@ -6,9 +6,10 @@ function GamesList() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
+  
 
   useEffect(() => {
-    axios.get('https://backend.chinchincasinoapp.com/api/games')
+   axios.get(`https://backend.chinchincasinoapp.com/api/games`)
       .then(response => {
         setGames(response.data);
         setLoading(false);
@@ -47,9 +48,9 @@ function GamesList() {
 
       {/* Games Grid */}
       <div className="d-flex mt-5">
-        <div className="row row-cols g-5 d-flex justify-content-center align-item-center">
+        <div className="row g-5 d-flex justify-content-center align-item-center">
           {filteredGames.map((game) => (
-            <div key={game.id} className="col affliate-link">
+            <div key={game.id} className="col-lg col-sm-3 col-md-4 affliate-link">
               <a className='underline' href='https://chinluckgames.com/wD74mscL?aff_click_id=subid&aff_id=1146'>
                 <div className="card d-flex align-items-center text-center bg-transparent border-0 shadow-sm">
                   <img
