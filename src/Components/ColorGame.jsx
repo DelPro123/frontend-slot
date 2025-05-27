@@ -9,8 +9,6 @@ function ColorGame() {
     const fetchData = () => {
       axios.get('https://backend.chinchincasinoapp.com/api/latest-predicted-games')
         .then(res => {
-          // console.log('Fetched data:', res.data);
-
           const grouped = { red: [], green: [], orange: [] };
 
           res.data.forEach(item => {
@@ -30,7 +28,7 @@ function ColorGame() {
 
     fetchData(); // Initial fetch
 
-    const intervalId = setInterval(fetchData, 1000);
+    const intervalId = setInterval(fetchData, 1000); // Refresh every second
 
     return () => clearInterval(intervalId); // Cleanup on unmount
   }, []);
@@ -68,8 +66,8 @@ function ColorGame() {
 
   const renderGames = (color) => (
     <div className={`${getBgColor(color)} p-3 rounded text-center text-white`}>
-      <h2 className="d-inline">{getWinrate(color)}</h2>
-      <h3 className="ms-2 fw-semibold">Winning Chance Rate</h3>
+      <h3 className="d-inline">{getWinrate(color)}</h3>
+      <h4 className="ms-2 fw-semibold">Winning Chance Rate</h4>
 
       <div className="progress mb-3 mt-2" style={{ height: '2rem' }}>
         <div
@@ -94,18 +92,24 @@ function ColorGame() {
           </p>
           <div className="d-flex flex-wrap gap-3 mt-3 justify-content-center">
             {gamesByColor[color].map((game) => (
-              <a className='underline' href='https://chinluckgames.com/wD74mscL?aff_click_id=subid&aff_id=1146'>
-              <div key={game.id} className="text-center" style={{ width: '120px' }}>
-                <img
-                  src={game.image_url}
-                  alt={game.name}
-                  className="img-fluid rounded"
-                  style={{ height: '80px', objectFit: 'cover' }}
-                />
-                <span className="d-block mt-1 small">
-                  {game.provider}<br />{game.name}
-                </span>
-              </div>
+              <a
+                key={game.id || `${game.name}-${game.provider}`}
+                className='underline text-decoration-none text-white'
+                href='https://playchin.com/NFFYJ8DF?aff_click_id=%7Bsubid%7D&tune_aff_id=1146&tune_offer_id=41&tune_url_id=268&persistence=1'
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="text-center" style={{ width: '120px' }}>
+                  <img
+                    src={game.image_url}
+                    alt={game.name}
+                    className="img-fluid rounded"
+                    style={{ height: '80px', objectFit: 'cover' }}
+                  />
+                  <span className="d-block mt-1 small">
+                    {game.provider}<br />{game.name}
+                  </span>
+                </div>
               </a>
             ))}
           </div>
@@ -118,7 +122,7 @@ function ColorGame() {
 
   return (
     <div className="row g-3">
-      <div className="col-lg col-sm-12 ">{renderGames('red')}</div>
+      <div className="col-lg col-sm-12">{renderGames('red')}</div>
       <div className="col-lg col-sm-12">{renderGames('green')}</div>
       <div className="col-lg col-sm-12">{renderGames('orange')}</div>
     </div>
