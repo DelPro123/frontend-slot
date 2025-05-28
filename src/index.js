@@ -42,7 +42,7 @@ ReactDOM.createRoot(document.getElementById('app')).render(
     </div>
     <div className="col-md-6 mb-2 mb-md-0 my-3 ">
         <a href="https://prediction.chinchincasinoapp.com/" className="text-dark" target="_blank" rel="noopener noreferrer">
-        <p className="mb-0 text-center">Copy Right © 2021 prediction.chinchincasinoapp.com</p>
+        <p className="mb-0 text-center">Copy Right © 2025 prediction.chinchincasinoapp.com</p>
         </a>
     </div>
     <div className="col-md-2 my-3">
