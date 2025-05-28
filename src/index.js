@@ -37,7 +37,9 @@ ReactDOM.createRoot(document.getElementById('app')).render(
      </div>  
      <footer className="d-flex flex-column flex-md-row justify-content-end align-items-center py-3 my-4 border-top">
     <div className="col-md-4 mb-2 mb-md-0 d-flex d-inline align-items-center my-3">
-        <img className='footer-favicon' src="https://chinchin-casino.com/wp-content/uploads/2025/04/Chinchin-Favicon.webp" alt="Chin Chin Casino Favicon" />
+         <a href="https://prediction.chinchincasinoapp.com/" className="text-dark" rel="noopener noreferrer">
+          <img className='footer-favicon' src="https://chinchin-casino.com/wp-content/uploads/2025/04/Chinchin-Favicon.webp" alt="Chin Chin Casino Favicon" />
+         </a>
         <p className="mb-0">The Chin Chin Casino App delivers the thrill of a real casino straight to your mobile device. Whether you're an experienced player or a beginner, you'll enjoy a wide selection of games, safe payment options, and a user-friendly interface designed for seamless play.</p>
     </div>
     <div className="col-md-6 mb-2 mb-md-0 my-3 ">
