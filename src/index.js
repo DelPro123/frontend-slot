@@ -35,33 +35,6 @@ ReactDOM.createRoot(document.getElementById('app')).render(
             <GamesList/>
         </div>
      </div>  
-     <footer className="d-flex flex-column flex-md-row justify-content-end align-items-center py-3 my-4 border-top">
-    <div className="col-md-4 mb-2 mb-md-0 d-flex d-inline align-items-center my-3">
-         <a href="https://prediction.chinchincasinoapp.com/" className="text-dark" rel="noopener noreferrer">
-          <img className='footer-favicon' src="https://chinchin-casino.com/wp-content/uploads/2025/04/Chinchin-Favicon.webp" alt="Chin Chin Casino Favicon" />
-         </a>
-        <p className="mb-0">The Chin Chin Casino App delivers the thrill of a real casino straight to your mobile device. Whether you're an experienced player or a beginner, you'll enjoy a wide selection of games, safe payment options, and a user-friendly interface designed for seamless play.</p>
-    </div>
-    <div className="col-md-6 mb-2 mb-md-0 my-3 ">
-        <a href="https://prediction.chinchincasinoapp.com/" className="text-dark" target="_blank" rel="noopener noreferrer">
-        <p className="mb-0 text-center">Copy Right © 2025 prediction.chinchincasinoapp.com</p>
-        </a>
-    </div>
-    <div className="col-md-2 my-3">
-        <div className="d-flex justify-content-end align-items-center gap-4">
-        <a href="https://web.facebook.com/chinchincasinoapp" className="text-dark" target="_blank" rel="noopener noreferrer">
-        <i className="fab fa-facebook fa-lg"></i>
-        </a>
-        <a href="https://medium.com/@chinchincasinoapp_92641" className="text-dark" target="_blank" rel="noopener noreferrer">
-        <i className="fab fa-medium fa-lg"></i>
-        </a>
-        <a href="https://www.pinterest.com/chinchincasinoapp" className="text-dark" target="_blank" rel="noopener noreferrer">
-        <i className="fab fa-pinterest fa-lg"></i>
-        </a>
-        </div>
-    </div>
-    </footer>
-
     </>
    
 

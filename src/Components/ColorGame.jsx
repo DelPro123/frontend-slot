@@ -103,6 +103,7 @@ function ColorGame() {
                   <img
                     src={game.image_url}
                     alt={game.name}
+                    title={game.name}
                     className="img-fluid rounded"
                     style={{ height: '80px', objectFit: 'cover' }}
                   />

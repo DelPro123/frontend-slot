@@ -150,6 +150,15 @@ li{
         color: #ED58A3;
     }
 }
+.play-now{
+      color:#F9CE3D;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+
+    &:hover {
+        color: #ED58A3;
+    }
+}
 .fa-lg{
    font-size: 2rem;
 }

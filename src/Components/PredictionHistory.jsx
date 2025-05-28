@@ -88,6 +88,7 @@ const PredictionHistory = () => {
                           <img
                             src={prediction.game.image_url || 'fallback.jpg'}
                             alt={prediction.game.name || 'Game'}
+                            title={prediction.game.name || 'Game'}
                             className="img-fluid rounded mb-2"
                             style={{ height: '80px', objectFit: 'cover' }}
                           />

@@ -59,6 +59,7 @@ function GamesList() {
                   <img
                     src={game.image_url || '/placeholder-game.png'}
                     alt={game.name}
+                    title={game.name}
                     className="card-img-top  text-center"
                   />
                   <div className="card-body p-2">
