@@ -48,6 +48,12 @@ p{
     color: #0D1121 !important;
 }
 
+footer{
+    p{
+        font-size: 12px;
+    }
+    
+}
 
  .bg-green-400{
     background-color: #3B996D;
@@ -127,7 +133,7 @@ li{
     .bgcard{
         border: 2px solid #ffffff !important;
         background-color: #141B34 !important;
-        height: 300px;
+        height: 400px;
         transition: transform 0.3s ease; // Smooth animation
         margin: 2px;
 
@@ -136,8 +142,21 @@ li{
     }
     }
 
+.fa-facebook,.fa-medium, .fa-pinterest{
+         color:#F9CE3D;
+         transition: transform 0.3s ease;
 
-
+    &:hover {
+        color: #ED58A3;
+    }
+}
+.fa-lg{
+   font-size: 2rem;
+}
+.footer-favicon{
+    width: 40px;
+    height: 100%;
+}
 
 @media(max-width: 767px)
  {
@@ -145,6 +164,9 @@ li{
     height: auto;
   }
 
+  .footer-favicon {
+    width: 114px !important;
+  }
   img{
   width: 100% !important;
   
